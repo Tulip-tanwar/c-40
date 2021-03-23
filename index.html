@@ -8,19 +8,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-
-    <script>
-      //Your web app's Firebase configuration
-      
-      // // Initialize Firebase
-      // firebase.initializeApp(firebaseConfig);
-
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    </script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBbD2bzm5ObEqvV1xWlYm_8HdFWbAuUNbQ",
+    authDomain: "car-racing-8e7cf.firebaseapp.com",
+    databaseURL: "https://car-racing-8e7cf-default-rtdb.firebaseio.com",
+    projectId: "car-racing-8e7cf",
+    storageBucket: "car-racing-8e7cf.appspot.com",
+    messagingSenderId: "444516016824",
+    appId: "1:444516016824:web:1850b04c920264a4550a4d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
     <script src="js/Player.js"></script>
     <script src="js/Form.js"></script>
@@ -31,3 +38,6 @@
     <script src="sketch.js"></script>
   </body>
 </html>
+
+
+
